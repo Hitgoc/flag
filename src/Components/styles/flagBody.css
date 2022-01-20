@@ -1,0 +1,106 @@
+#card-body {
+  background-color: #ececec;
+  height: 700px;
+  width: 1600px;
+  margin: auto;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0px 3px 10px grey;
+  margin-top: 120px;
+}
+
+#card-part {
+  background-color: white;
+  height: 590px;
+  width: 1600px;
+  margin-top: 20px;
+}
+
+#card-content {
+  margin-left: 50px;
+  margin-top: -5px;
+}
+
+#card-content p {
+  color: deepskyblue;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  margin: auto;
+  margin-left: 8px;
+}
+
+#circle {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  border-style: dashed;
+  z-index: -1;
+}
+
+#label {
+  text-align: center;
+  width: 60px;
+  background-color: #ccc;
+  position: absolute;
+  padding: 5px;
+  padding-left: 8px;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 26px;
+  margin-top: -10px;
+}
+
+.fa-flag {
+  color: white;
+  padding: 23px;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+#list {
+  background-color: white;
+  height: auto;
+  width: 124px;
+  box-shadow: 1px 3px 10px;
+  margin-left: 90px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#list ul {
+  list-style: none;
+  margin-left: -10px;
+}
+
+#list ul li {
+  padding: 5px;
+}
+
+#list ul li:hover {
+  cursor: pointer;
+}
+
+#low::before {
+  content: "\2022";
+  color: #ececec;
+}
+
+#medium::before {
+  content: "\2022";
+  color: lightpink;
+}
+
+#high::before {
+  content: "\2022";
+  color: deepskyblue;
+}
+
+#critical::before {
+  content: "\2022";
+  color: red;
+}
+
+#clear::before {
+  content: "\2022";
+  color: whitesmoke;
+}

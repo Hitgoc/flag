@@ -26,8 +26,10 @@ const FlagBody = () => {
 
   const lowColor = () => {
     flagRef.current.style.color = "lightgrey";
-    circleRef.current.style.border = "2px solid lightgrey";
-    circleRef.current.style.borderStyle = "dashed";
+    circleRef.current.style.border = "2px dashed lightgrey";
+    flagRef.current.style.transition = "ease-in-out 0.3s";
+    circleRef.current.style.transition = "ease-in-out 0.3s";
+    // circleRef.current.style.borderStyle = "dashed";
     setShowList(false);
     setIsSecondClick(false);
     setLabel("Low");
@@ -36,6 +38,8 @@ const FlagBody = () => {
     flagRef.current.style.color = "lightpink";
     circleRef.current.style.border = "2px solid lightpink";
     circleRef.current.style.borderStyle = "dashed";
+    flagRef.current.style.transition = "ease-in-out 0.3s";
+    circleRef.current.style.transition = "ease-in-out 0.3s";
     setShowList(false);
     setIsSecondClick(false);
     setLabel("Medium");
@@ -44,6 +48,8 @@ const FlagBody = () => {
     flagRef.current.style.color = "deepskyblue";
     circleRef.current.style.border = "2px solid deepskyblue";
     circleRef.current.style.borderStyle = "dashed";
+    flagRef.current.style.transition = "ease-in-out 0.3s";
+    circleRef.current.style.transition = "ease-in-out 0.3s";
     setShowList(false);
     setIsSecondClick(false);
     setLabel("High");
@@ -52,14 +58,19 @@ const FlagBody = () => {
     flagRef.current.style.color = "red";
     circleRef.current.style.border = "2px solid red";
     circleRef.current.style.borderStyle = "dashed";
+    flagRef.current.style.transition = "ease-in-out 0.3s";
+    circleRef.current.style.transition = "ease-in-out 0.3s";
     setShowList(false);
     setIsSecondClick(false);
     setLabel("Critical");
+    flagRef.current.style.transition = "ease-in 1s";
   };
   const clearColor = () => {
     flagRef.current.style.color = "white";
     circleRef.current.style.border = "2px solid white";
     circleRef.current.style.borderStyle = "dashed";
+    flagRef.current.style.transition = "ease-in-out 0.3s";
+    circleRef.current.style.transition = "ease-in-out 0.3s";
     setShowList(false);
     setIsSecondClick(false);
     setLabel(null);
